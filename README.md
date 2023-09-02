@@ -22,6 +22,10 @@ This is a Chromium extension to enable WebXR on Youtube videos that are non-3D a
 6. Enjoy
 
 ### Troubleshooting
+Ignore the message from Youtube that says "360° video playback is not supported on this browser."
+
+If the video loads with the directional view buttons hit F5 or the refresh page button - I will make this easier in the future
+
 If it says "VR NOT SUPPPORTED" then the browser hasn't detected your hardware
 - Make sure your VR is turned on and calibrated to your room
 - Make sure you have given Youtube.com permission to access "Virtual reality" in the "site permissions"
