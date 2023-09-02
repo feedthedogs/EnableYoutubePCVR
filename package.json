@@ -1,0 +1,18 @@
+{
+  "name": "Enable Youtube PC VR in Chromium",
+  "version": "1.0.0",
+  "description": "Enables PC-VR for non-3D spherical youtube videos - Tested on HTC Vive Cosmos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "feedthedogs",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.155.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
