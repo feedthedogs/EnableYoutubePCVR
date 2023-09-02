@@ -59,6 +59,12 @@ observer.observe(document, { childList: true, subtree: true });
 function EnableVRVideo(videoElement) {
     console.log("enabling VR on " + videoElement);
     
+    // remove the webgl viewer of the 360 video
+    const webgl = document.querySelector('.webgl')
+    if (webgl) { webgl.remove(); }
+    const spherecontrol = document.querySelector('.ytp-webgl-spherical-control');
+    if (spherecontrol) { webgl.remove(); }
+
     camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 2000 );
     camera.layers.enable( 1 ); // render left view when no stereo available
 
@@ -93,9 +99,11 @@ function EnableVRVideo(videoElement) {
     
     // clean alerts box and add VR button
     const alertsbox = document.querySelector('#alerts')
-    alertsbox.removeChild(alertsbox.firstChild);
-    alertsbox.appendChild( VRButton.createButton( renderer ) );
-    document.querySelector('#VRButton').style.position='relative'
+    if (alertsbox) {
+        alertsbox.removeChild(alertsbox.firstChild);
+        alertsbox.appendChild( VRButton.createButton( renderer ) );
+        document.querySelector('#VRButton').style.position='relative'
+    }
 
     window.addEventListener( 'resize', onWindowResize );
 }
