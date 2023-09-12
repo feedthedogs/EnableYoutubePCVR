@@ -4,8 +4,9 @@ I couldn't find a way to watch Youtube VR videos on the PC without paying?
 
 This is a Chromium extension to enable WebXR on Youtube videos that are non-3D and 360 degrees thanks to https://threejs.org/
 
-### Install Instructions - Easy way - Coming soon?
-1. Open the Edge extension store and download "Enable Youtube PC VR in Edge"
+### Install Instructions - Easy way
+1. Using Microsoft Edge, open the extension page at: https://microsoftedge.microsoft.com/addons/detail/enable-youtube-pc-vr-in-e/bcadncfmfmigccocnahamkkpbfopjffp
+2. Click "Get" on the right hand side
 
 ### Install Instructions - Manual way
 1. Install a Chromium based browser - Chrome, Edge, Brave etc.
