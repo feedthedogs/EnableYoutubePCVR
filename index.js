@@ -100,7 +100,9 @@ function EnableVRVideo(videoElement) {
     // clean alerts box and add VR button
     const alertsbox = document.querySelector('#alerts')
     if (alertsbox) {
-        alertsbox.removeChild(alertsbox.firstChild);
+        if (alertsbox.firstChild) {
+            alertsbox.removeChild(alertsbox.firstChild);
+        }
         alertsbox.appendChild( VRButton.createButton( renderer ) );
         document.querySelector('#VRButton').style.position='relative'
     }
